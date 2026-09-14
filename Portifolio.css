@@ -1,0 +1,102 @@
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   font-family: "poppins";
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+:root {
+   --bg-color: #080808;
+   --second-bg-color: #101010;
+   --text-color: white;
+   --main-color: #ea580c;
+   --logo-color: linear-gradient(
+      270deg,
+      #DF8908 10%,
+      #ff1d15 100%
+   );
+}
+
+html{
+   font-size: 60%;
+   overflow-x: hidden;
+}
+
+body{
+   background: var(--bg-color);
+   color: var(--text-color);
+}
+
+.header{
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   padding: 4rem 15%;
+   background: transparent;
+   backdrop-filter: blur(0.8rem);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 1000;
+}
+
+#menu-icon{
+   font-size: 0.5rem;
+   color: var(--main-color);
+   display: none;
+}
+
+.logo{
+   font-size: 3rem;
+   color: var(--text-color);
+   font-weight: 800;
+   cursor: pointer;
+   transition: 0.3s ease-in-out;
+}
+
+.logo:hover{
+   transform: scale(1.1);
+}
+
+span{
+   background: var(--logo-color);
+   background-clip: text;
+   color: var(--logo-color);
+}
+
+.nav-bar a{
+   font-size: 1.8rem;
+   color: white;
+   margin-left: 4rem;
+   font-weight: 500;
+   transition: 0.3s ease-in-out;
+   border-bottom: solid 3px transparent;
+}
+.nav-bar a:hover{
+   color: var(--main-color);
+   border-bottom: 3px solid var(--main-color);
+}
+
+.gradient-btn{
+   font-size: 1.8rem;
+   padding: 1rem 2rem;
+   border-radius: 3rem;
+   background: var(--logo-color);
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: 0.3s ease-in-out;
+   border: none;
+   text-wrap: nowrap;
+}
+
+.gradient-btn:hover{
+   transform: scale(1.05);
+}
+
+
+
+
+
